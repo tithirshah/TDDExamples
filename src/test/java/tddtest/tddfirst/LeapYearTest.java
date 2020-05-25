@@ -41,6 +41,17 @@ public class LeapYearTest {
 		
 	}
 	
+	@Test
+	public void isLeapYearasPerJulianCalander()
+	{
+		assertTrue(lp.isLeapYear(1444));
+		assertTrue(lp.isLeapYear(1200));
+		assertTrue(lp.isLeapYear(1000));
+		assertFalse(lp.isLeapYear(1551));
+		assertFalse(lp.isLeapYear(1433));
+		
+	}
+	
 	
 	
 	
