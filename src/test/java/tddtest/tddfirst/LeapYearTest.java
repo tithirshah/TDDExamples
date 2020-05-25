@@ -3,11 +3,18 @@ package tddtest.tddfirst;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
+import org.junit.Before;
 import org.junit.Test;
 
 public class LeapYearTest {
 	
-	LeapYear lp=new LeapYear();
+	private LeapYear lp;
+	
+	@Before
+	public void getInstance()
+	{
+		lp=new LeapYear();
+	}
 	
 	@Test
 	public void isYearDivisiblebyFour()
